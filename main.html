@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select a Genre</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-brand">Books Recommender</div>
+    <div class="container">
+        <h1 class="genre-title">Select a Genre</h1>
+        <div class="genre-grid">
+            <button class="genre-btn self-improvement" onclick="selectGenre('self-improvement')"><span>💪</span>Self-Improvement</button>
+            <button class="genre-btn psychology" onclick="selectGenre('psychology')"><span>🧠</span>Psychology</button>
+            <button class="genre-btn relationships" onclick="selectGenre('relationships')"><span>❤️</span>Relationships & Human Nature</button>
+            <button class="genre-btn money" onclick="selectGenre('money')"><span>💸</span>Money</button>
+            <button class="genre-btn startup" onclick="selectGenre('startup')"><span>🚀</span>Start Up</button>
+            <button class="genre-btn science" onclick="selectGenre('science')"><span>🔬</span>Science</button>
+            <button class="genre-btn philosophy" onclick="selectGenre('philosophy')"><span>🧘</span>Philosophy</button>
+            <button class="genre-btn fiction" onclick="selectGenre('fiction')"><span>📚</span>Fiction</button>
+            <button class="genre-btn biographies" onclick="selectGenre('biographies')"><span>🌟</span>Biographies</button>
+        </div>
+    </div>
+    <script>
+        function selectGenre(genre) {
+            localStorage.setItem('selectedGenre', genre);
+            window.location.href = "recommend.html";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(120deg, #f6fafd 0%, #f6ebd6 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Top left app branding - BIGGER SIZE */
+.app-brand {
+    position: absolute;
+    top: 34px;
+    left: 44px;
+    font-size: 2em; /* BIGGER SIZE */
+    color: #344265;
+    font-family: 'Montserrat', Arial, sans-serif;
+    opacity: 0.95;
+    letter-spacing: 0.32px;
+    z-index: 10;
+    font-weight: 700;
+}
+
+/* White box container */
+.container {
+    background: rgba(255,255,255,0.97);
+    border-radius: 28px;
+    padding: 38px 32px 38px 32px;
+    box-shadow: 0 8px 36px rgba(146, 158, 255, 0.13);
+    text-align: center;
+}
+
+/* Title inside the box */
+.genre-title {
+    font-size: 2.5em;
+    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+    font-weight: 900;
+    color: #35365e;
+    margin-bottom: 33px;
+    margin-top: 0;
+    letter-spacing: 1.6px;
+}
+
+/* Genre grid buttons */
+.genre-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px 45px;
+    justify-items: center;
+}
+
+/* Genre button styling */
+.genre-btn {
+    min-width: 175px;
+    min-height: 68px;
+    border: none;
+    border-radius: 13px;
+    font-size: 1.1em;
+    font-weight: 700;
+    padding: 15px 7px 13px 7px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.28em;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(60, 90, 160, 0.09);
+    transition: transform 0.13s, box-shadow 0.17s;
+    background: #f8f8f9;
+}
+
+.genre-btn span {
+    font-size: 1.33em;
+    margin-right: 6px;
+}
+
+/* Pastel backgrounds for each genre */
+.self-improvement { background: linear-gradient(135deg, #fffbe7 0%, #faf3dd 100%); color: #826434;}
+.psychology      { background: linear-gradient(135deg, #e6f4fd 0%, #ece3f1 100%); color: #436c7c;}
+.relationships   { background: linear-gradient(135deg, #ffe7f3 0%, #ffd2e2 100%); color: #a84c76;}
+.money           { background: linear-gradient(135deg, #ecfdf8 0%, #eafbea 100%); color: #49786a;}
+.startup         { background: linear-gradient(135deg, #e8ecfd 0%, #e6f8fa 100%); color: #465f7d;}
+.science         { background: linear-gradient(135deg, #eceaff 0%, #eafffa 100%); color: #557078;}
+.philosophy      { background: linear-gradient(135deg, #faeedb 0%, #ede3ff 100%); color: #906d51;}
+.fiction         { background: linear-gradient(135deg, #f3eeff 0%, #e2fafb 100%); color: #5b527a;}
+.biographies     { background: linear-gradient(135deg, #fffbe0 0%, #f1ebdc 100%); color: #96713d;}
+
+.genre-btn:hover {
+    transform: scale(1.04) rotate(-1deg);
+    box-shadow: 0 8px 20px #b6a6ff2a, 0 4px 14px #e2bcff10;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 900px) {
+    .genre-grid { grid-template-columns: repeat(2, 1fr);}
+    .container { padding: 20px 5px;}
+    .genre-btn { min-width: 100px; font-size: 0.98em;}
+    .app-brand { font-size: 1.3em; left: 14px; }
+}
+@media (max-width: 600px) {
+    .genre-grid { grid-template-columns: repeat(1, 1fr);}
+    .container { padding: 6px 1px;}
+}

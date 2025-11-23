@@ -1,0 +1,98 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(120deg, #f6fafd 0%, #f6ebd6 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background: rgba(255,255,255,0.98);
+    border-radius: 28px;
+    box-shadow: 0 8px 36px rgba(146, 158, 255, 0.13);
+    text-align: center;
+    padding: 38px 32px 38px 32px;
+    max-width: 410px;
+    margin-top: 18px;
+    min-height: 350px;
+}
+
+.next-btn {
+    background: linear-gradient(135deg, #ffe7f3 0%, #ffe9ae 100%);
+    color: #344265;
+    border: none;
+    border-radius: 9px;
+    font-size: 1.04em;
+    font-weight: 700;
+    padding: 11px 30px;
+    margin-bottom: 36px;
+    box-shadow: 0 3px 12px #cfc7f144;
+    cursor: pointer;
+    transition: background 0.15s, transform 0.12s;
+}
+.next-btn:hover {
+    background: linear-gradient(135deg, #ffe9ae 0%, #ffe7f3 100%);
+    transform: scale(1.07);
+}
+
+.recommend-card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #e6f4fd 0%, #faf3dd 100%);
+    border-radius: 18px;
+    box-shadow: 0 3px 18px #f6ccec34;
+    padding: 28px 20px;
+}
+
+.book-info {
+    flex: 1.2;
+    text-align: left;
+    padding-right: 10px;
+}
+.book-info h2 {
+    margin-top: 0;
+    margin-bottom: 6px;
+    color: #344265;
+    font-size: 1.4em;
+    font-weight: 700;
+}
+.book-info p {
+    margin: 8px 0 0 0;
+    color: #525252;
+    font-size: 1em;
+}
+
+.book-cover {
+    flex: 0.8;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.book-cover img {
+    width: 90px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 9px;
+    box-shadow: 0 2px 12px #b4adaf59;
+}
+.read-part-btn {
+    background: linear-gradient(135deg, #e6f4fd 0%, #ffe7f3 100%);
+    color: #374469;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.02em;
+    font-weight: 650;
+    padding: 10px 26px;
+    margin-top: 18px;
+    box-shadow: 0 2px 10px #cfd9ff29;
+    cursor: pointer;
+    transition: background 0.15s, transform 0.15s;
+    display: inline-block;
+}
+.read-part-btn:hover {
+    background: linear-gradient(135deg, #ffe9ae 0%, #e6f4fd 100%);
+    transform: scale(1.07);
+}
