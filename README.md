@@ -13,6 +13,8 @@ A browser‑based Book Recommender that suggests books based on genre. Users fir
 
 ### Screenshots 
 <img width="1305" height="619" alt="Capture 1" src="https://github.com/user-attachments/assets/2ff593d1-05ab-4f1c-8011-893368fa6f77" />
+<img width="525" height="461" alt="Capture 2" src="https://github.com/user-attachments/assets/08f249d9-7776-4c61-9434-4c3c54f6ba42" />
+<img width="520" height="459" alt="Capture 3" src="https://github.com/user-attachments/assets/ddcbbd30-58e8-493a-a88a-feb790e9caaa" />
 
 
 ### Tech Stack
