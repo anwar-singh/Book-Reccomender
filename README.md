@@ -52,5 +52,4 @@ A browser‑based Book Recommender that suggests books based on genre. Users fir
 - Handling simple navigation and state (remembering the chosen genre and current book index).  
 - Dynamically updating the DOM to show different recommendations without reloading the whole site.
 
-files/attachments/images/86635499/2c67ab37-c6f9-4bd4-a2c2-7c401fc58cf3/selected_image_8649167788136789130.jpg
-[4] selected_image_5829090144560391650.jpg https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/images/86635499/f84ec593-854d-4ee3-9de7-f2109139f4c1/selected_image_5829090144560391650.jpg
+
